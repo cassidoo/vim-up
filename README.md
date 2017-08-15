@@ -26,6 +26,7 @@ repo that's no longer maintained, plus a few other goodies.
 * `<C-]>` jump to definition using ctags
 * `,l` begins aligning lines on a string, usually used as `,l=` to align assignments
 * `<C-hjkl>` move between windows, shorthand for `<C-w> hjkl`
+* `:GitGutterToggle` to toggle your git diff, and `:GitGutterLineHighlightsToggle` to highlight diffed lines
 
 Note: When you see `C` here, that means Ctrl (not Cmd)!
 
