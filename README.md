@@ -7,8 +7,8 @@ repo that's no longer maintained, plus a few other goodies.
 ## What's in it?
 
 * [iTerm 2](http://www.iterm2.com/)
-* The [Solarized color scheme](http://ethanschoonover.com/solarized)
-* A bunch of vim bundles and colors and moooore
+* The [base16-shell](https://github.com/chriskempson/base16-shell) and related [base16-vim](https://github.com/chriskempson/base16-vim) colors (including iTerm colors)
+* A bunch of vim bundles and moooore
 
 ### Keyboard Shortcuts
 
@@ -50,7 +50,11 @@ don't put it in the `.local` files, just put it in the main ones!
 
 ### Colors
 This repo includes a bunch of different colorschemes to test out, and by default
-uses `Tomorrow-Night`. You can test out different colors using the `colorscheme`
+uses `base16-default-dark`. You'll see instructions on properly installing the 
+[base16-shell](https://github.com/chriskempson/base16-shell) and related colors
+after everything runs from the `rake` command.
+
+You can test out different colors using the `colorscheme`
 vim command, and just tabbing through the different options. There are a lot.
 Don't be overwhelmed. :wink:
 
@@ -65,4 +69,4 @@ whatever it was before installing. Some uninstallation steps will be manual.
 
 - Thanks to Square for their (now unmaintained) [maximum-awesome](https://github.com/square/maximum-awesome) repo
 - Thanks to Tim Pope for his vim plugins
-- Thanks to GitHub user [flazz](github.com/flazz) for his [colorschemes repo](https://github.com/flazz/vim-colorschemes)
+- Thanks to GitHub user [chriskempson](github.com/chriskempson) for his base16 work
