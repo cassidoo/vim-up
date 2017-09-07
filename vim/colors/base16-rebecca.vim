@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Railscasts scheme by Ryan Bates (http://railscasts.com)
+" Rebecca scheme by Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -10,27 +10,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-railscasts.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-rebecca.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "2b2b2b"
-let s:gui01 = "272935"
-let s:gui02 = "3a4055"
-let s:gui03 = "5a647e"
-let s:gui04 = "d4cfc9"
-let s:gui05 = "e6e1dc"
-let s:gui06 = "f4f1ed"
-let s:gui07 = "f9f7f3"
-let s:gui08 = "da4939"
-let s:gui09 = "cc7833"
-let s:gui0A = "ffc66d"
-let s:gui0B = "a5c261"
-let s:gui0C = "519f50"
-let s:gui0D = "6d9cbe"
-let s:gui0E = "b6b3eb"
-let s:gui0F = "bc9458"
+let s:gui00 = "292a44"
+let s:gui01 = "663399"
+let s:gui02 = "383a62"
+let s:gui03 = "666699"
+let s:gui04 = "a0a0c5"
+let s:gui05 = "f1eff8"
+let s:gui06 = "ccccff"
+let s:gui07 = "53495d"
+let s:gui08 = "a0a0c5"
+let s:gui09 = "efe4a1"
+let s:gui0A = "ae81ff"
+let s:gui0B = "6dfedf"
+let s:gui0C = "8eaee0"
+let s:gui0D = "2de0a7"
+let s:gui0E = "7aa5ff"
+let s:gui0F = "ff79c6"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -61,22 +61,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#2b2b2b"
-  let g:terminal_color_1 =  "#da4939"
-  let g:terminal_color_2 =  "#a5c261"
-  let g:terminal_color_3 =  "#ffc66d"
-  let g:terminal_color_4 =  "#6d9cbe"
-  let g:terminal_color_5 =  "#b6b3eb"
-  let g:terminal_color_6 =  "#519f50"
-  let g:terminal_color_7 =  "#e6e1dc"
-  let g:terminal_color_8 =  "#5a647e"
-  let g:terminal_color_9 =  "#cc7833"
-  let g:terminal_color_10 = "#272935"
-  let g:terminal_color_11 = "#3a4055"
-  let g:terminal_color_12 = "#d4cfc9"
-  let g:terminal_color_13 = "#f4f1ed"
-  let g:terminal_color_14 = "#bc9458"
-  let g:terminal_color_15 = "#f9f7f3"
+  let g:terminal_color_0 =  "#292a44"
+  let g:terminal_color_1 =  "#a0a0c5"
+  let g:terminal_color_2 =  "#6dfedf"
+  let g:terminal_color_3 =  "#ae81ff"
+  let g:terminal_color_4 =  "#2de0a7"
+  let g:terminal_color_5 =  "#7aa5ff"
+  let g:terminal_color_6 =  "#8eaee0"
+  let g:terminal_color_7 =  "#f1eff8"
+  let g:terminal_color_8 =  "#666699"
+  let g:terminal_color_9 =  "#efe4a1"
+  let g:terminal_color_10 = "#663399"
+  let g:terminal_color_11 = "#383a62"
+  let g:terminal_color_12 = "#a0a0c5"
+  let g:terminal_color_13 = "#ccccff"
+  let g:terminal_color_14 = "#ff79c6"
+  let g:terminal_color_15 = "#53495d"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
   if &background == "light"
@@ -88,7 +88,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-railscasts"
+let g:colors_name = "base16-rebecca"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)

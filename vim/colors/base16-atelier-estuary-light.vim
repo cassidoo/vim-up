@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Railscasts scheme by Ryan Bates (http://railscasts.com)
+" Atelier Estuary Light scheme by Bram de Haan (http://atelierbramdehaan.nl)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -10,27 +10,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-railscasts.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-atelier-estuary-light.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "2b2b2b"
-let s:gui01 = "272935"
-let s:gui02 = "3a4055"
-let s:gui03 = "5a647e"
-let s:gui04 = "d4cfc9"
-let s:gui05 = "e6e1dc"
-let s:gui06 = "f4f1ed"
-let s:gui07 = "f9f7f3"
-let s:gui08 = "da4939"
-let s:gui09 = "cc7833"
-let s:gui0A = "ffc66d"
-let s:gui0B = "a5c261"
-let s:gui0C = "519f50"
-let s:gui0D = "6d9cbe"
-let s:gui0E = "b6b3eb"
-let s:gui0F = "bc9458"
+let s:gui00 = "f4f3ec"
+let s:gui01 = "e7e6df"
+let s:gui02 = "929181"
+let s:gui03 = "878573"
+let s:gui04 = "6c6b5a"
+let s:gui05 = "5f5e4e"
+let s:gui06 = "302f27"
+let s:gui07 = "22221b"
+let s:gui08 = "ba6236"
+let s:gui09 = "ae7313"
+let s:gui0A = "a5980d"
+let s:gui0B = "7d9726"
+let s:gui0C = "5b9d48"
+let s:gui0D = "36a166"
+let s:gui0E = "5f9182"
+let s:gui0F = "9d6c7c"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -61,22 +61,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#2b2b2b"
-  let g:terminal_color_1 =  "#da4939"
-  let g:terminal_color_2 =  "#a5c261"
-  let g:terminal_color_3 =  "#ffc66d"
-  let g:terminal_color_4 =  "#6d9cbe"
-  let g:terminal_color_5 =  "#b6b3eb"
-  let g:terminal_color_6 =  "#519f50"
-  let g:terminal_color_7 =  "#e6e1dc"
-  let g:terminal_color_8 =  "#5a647e"
-  let g:terminal_color_9 =  "#cc7833"
-  let g:terminal_color_10 = "#272935"
-  let g:terminal_color_11 = "#3a4055"
-  let g:terminal_color_12 = "#d4cfc9"
-  let g:terminal_color_13 = "#f4f1ed"
-  let g:terminal_color_14 = "#bc9458"
-  let g:terminal_color_15 = "#f9f7f3"
+  let g:terminal_color_0 =  "#f4f3ec"
+  let g:terminal_color_1 =  "#ba6236"
+  let g:terminal_color_2 =  "#7d9726"
+  let g:terminal_color_3 =  "#a5980d"
+  let g:terminal_color_4 =  "#36a166"
+  let g:terminal_color_5 =  "#5f9182"
+  let g:terminal_color_6 =  "#5b9d48"
+  let g:terminal_color_7 =  "#5f5e4e"
+  let g:terminal_color_8 =  "#878573"
+  let g:terminal_color_9 =  "#ae7313"
+  let g:terminal_color_10 = "#e7e6df"
+  let g:terminal_color_11 = "#929181"
+  let g:terminal_color_12 = "#6c6b5a"
+  let g:terminal_color_13 = "#302f27"
+  let g:terminal_color_14 = "#9d6c7c"
+  let g:terminal_color_15 = "#22221b"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
   if &background == "light"
@@ -88,7 +88,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-railscasts"
+let g:colors_name = "base16-atelier-estuary-light"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)

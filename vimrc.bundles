@@ -1,6 +1,7 @@
 " If you want to make a PR, put bundles here. If you want your bundles to stay
 " local, put them in ~/.vimrc.bundles.local and add them there
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'austintaylor/vim-indentobject'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -21,7 +22,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary'

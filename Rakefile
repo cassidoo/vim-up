@@ -189,23 +189,27 @@ task :install do
   # Install Vundle and bundles
   Rake::Task['install:vundle'].invoke
 
-  step 'iterm2 colorschemes'
-  colorschemes = `defaults read com.googlecode.iterm2 'Custom Color Presets'`
-  dark  = colorschemes !~ /Solarized Dark/
-  light = colorschemes !~ /Solarized Light/
-  sh('open', '-a', '/Applications/iTerm.app', File.expand_path('iterm2-colors-solarized/Solarized Dark.itermcolors')) if dark
-  sh('open', '-a', '/Applications/iTerm.app', File.expand_path('iterm2-colors-solarized/Solarized Light.itermcolors')) if light
-
   step 'iterm2 profiles'
   puts
   puts "  All done! That was easy!"
   puts
-  puts "  Now, for your iTerm colors, you can manually set up Solarized Light and Dark profiles."
+  puts "  Now, for your iTerm colors, you can manually set up your base16 color profiles."
   puts "  You can do this in 'Preferences' -> 'Profiles' by adding a new profile,"
-  puts "  then clicking the 'Colors' tab, 'Load Presets...' and choosing a Solarized option."
-  puts "  Also be sure to set Terminal Type to 'xterm-256color' in the 'Terminal' tab."
+  puts "  then clicking the 'Colors' tab, 'Load Presets...' and importing all the colors in the iterm-colors folder."
   puts
-  puts "  Have fun with your new and improved vim!"
+  puts "  Then, set Terminal Type to 'xterm-256color' in the 'Terminal' tab."
+  puts "  Then, clone the repository for base16-shell:"
+  puts "  $ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell"
+  puts
+  puts "  Once that's done, add these lines to your ~/.bashrc, ~/.bash_profile, or ~/.zshrc:"
+  puts '  BASE16_SHELL=$HOME/.config/base16-shell/'
+  puts '    [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"'
+  puts
+  puts "  And then, open a new shell and type:"
+  puts "  $ base16_default-dark"
+  puts "  (there are other commands available, try typing base16 and hit tab to see the options)"
+  puts
+  puts "  And you're done! Have fun with your new and improved vim!"
   puts
 end
 
