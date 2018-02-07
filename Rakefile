@@ -146,7 +146,7 @@ namespace :install do
   task :vundle do
     step 'vundle'
     install_github_bundle 'VundleVim','Vundle.vim'
-    sh '~/bin/vim -c "PluginInstall!" -c "q" -c "q"'
+    sh '/usr/bin/vim -c "PluginInstall!" -c "q" -c "q"'
   end
 end
 
