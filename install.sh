@@ -16,11 +16,12 @@ function install() {
 
     cp vimrc.local ~/.vimrc.local
     cp vimrc.bundles.local ~/.vimrc.bundles.local
-
+    autocrlf=$(git config --global core.autocrlf)
     git config --global core.autocrlf input
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null
 
     $(which vim) -c "PluginInstall!" -c "q" -c "q"
+    git config --global core.autocrlf $(echo $autocrlf)
 
     echo "And you're done! Have fun with your new and improved vim!"
 
