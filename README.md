@@ -1,6 +1,6 @@
 # vim-up
 
-A bunch of stuff to vim you up. Forked from Cassidoo's vim-up. Modified for Linux.
+A bunch of stuff to vim you up. Built for Mac and Linux.
 Heavily based on Square's [maximum-awesome](https://github.com/square/maximum-awesome)
 repo that's no longer maintained, plus a few other goodies.
 
