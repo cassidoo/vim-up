@@ -32,11 +32,19 @@ Note: When you see `C` here, that means Ctrl (not Cmd)!
 
 ## Install
 
+### on macOS
     rake
+    
+### on Linux
+    make install
 
 ## Update
 
+### on macOS
     rake
+
+### on Linux
+    make install
 
 This will update all installed plugins using Vundle's `:PluginInstall!`
 command. If there are errors, just clear out the problem directories in
@@ -60,7 +68,11 @@ Don't be overwhelmed. :wink:
 
 ## Uninstall
 
+### on macOS
     rake uninstall
+    
+### on Linux
+    make uninstall
 
 This won't remove everything, but your vim configuration should be reset to
 whatever it was before installing. Some uninstallation steps will be manual.
