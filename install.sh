@@ -31,9 +31,9 @@ function uninstall() {
     echo "vim-up is uninstalled, there may be some files that need to be removed manually"
 }
 
-if [ $1 == "install" ]; then
+if [[ $1 = "install" ]]; then
     install
-elif [ $1 == "uninstall" ]; then
+elif [[ $1 = "uninstall" ]]; then
     uninstall
 else
     install
