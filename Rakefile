@@ -20,13 +20,6 @@ def install_github_bundle(user, package)
   end
 end
 
-def brew_cask_install(package, *options)
-  output = `brew cask info #{package}`
-  return unless output.include?('Not installed')
-
-  sh "brew cask install #{package} #{options.join ' '}"
-end
-
 def step(description)
   description = "-- #{description} "
   description = description.ljust(80, '-')
@@ -126,7 +119,7 @@ namespace :install do
   task :iterm do
     step 'iterm2'
     unless app? 'iTerm'
-      brew_cask_install 'iterm2'
+      sh "brew install --cask iterm2"
     end
   end
 
