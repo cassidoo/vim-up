@@ -81,4 +81,4 @@ whatever it was before installing. Some uninstallation steps will be manual.
 
 - Thanks to Square for their (now unmaintained) [maximum-awesome](https://github.com/square/maximum-awesome) repo
 - Thanks to Tim Pope for his vim plugins
-- Thanks to GitHub user [chriskempson](github.com/chriskempson) for his base16 work
+- Thanks to GitHub user [chriskempson](https://github.com/chriskempson) for his base16 work
